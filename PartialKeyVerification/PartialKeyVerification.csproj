@@ -18,7 +18,15 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageTags>licensing keys</PackageTags>
     <Copyright>2007-2013 Marcus Cuda</Copyright>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <Compile Update="PartialKeyGenerator.cs">
